@@ -1,6 +1,51 @@
-<div class="container">
-  <div class="input-group mb-3">
-    <span class="input-group-text" id="basic-addon1">@</span>
-    <input type="text" class="form-control" placeholder="email" aria-label="Username" aria-describedby="basic-addon1">
+<div class="container mt-5 col-4">
+  <div class="wrapper">
+    <form action=""   class="needs-validation" novalidate>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" id="email" placeholder="Email" type="email" required>
+        <div class="invalid-feedback">
+          Please enter an email.
+        </div>
+      </div>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" id="phone" placeholder="Phone" type="number" required  readonly>
+        <button class="btn btn-outline-secondary">+</button>
+        <div class="invalid-feedback">
+          Please enter a valid email.
+        </div>
+      </div>
+      <div class="input-group mb-3">
+        <button class="btn btn-outline-secondary calendar-btn col-1 p-2"><img src="static/images/calendar.png" alt=""></button>
+        <input type="text" class="form-control" id="birthday" placeholder="Birthday" required readonly>
+        <div class="invalid-feedback">
+          Please enter your birthday.
+        </div>
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" >@</span>
+        <input type="text" class="form-control" id="username" placeholder="Username" required>
+        <div class="invalid-feedback">
+          Please enter username.
+        </div>
+      </div>
+      <div class="input-group mb-3">
+        <input type="password" class="form-control" id="password" placeholder="Password" required>
+        <div class="invalid-feedback">
+          Please enter a valid password.
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </div>
+    </form>
   </div>
 </div>
+<!-- 
+orbit - calendar
+<div id="app">
+  <div id="orbit-container">
+    <img id="earth" src="static/images/world.svg" />
+    <div id="date">test</div>
+  </div>
+
+</div> -->

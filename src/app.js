@@ -20,6 +20,10 @@ app.get("/login", (req, res) => {
   res.render('./templates/loginpage');
 });
 
+app.get("/dashboard", (req, res) => {
+  res.render('./templates/dashboard');
+});
+
 app.listen(port, () => {
   console.log(`site alive on http://localhost:${port}`);
 });
